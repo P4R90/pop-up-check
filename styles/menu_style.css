@@ -1,0 +1,263 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .page_title {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+  }
+
+  .menu {
+    display: flex;
+    margin-top: 20px;
+    width: 1200px;
+    height: 700px;
+    background-color: #ffcdcd;
+  }
+
+  .menu_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    margin-left: 90px;
+    margin-top: 20px;
+    color: white;
+  }
+
+/* Starters */
+  .starters{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7a2a2;
+    height: 340px;
+    width: 320px;
+    margin-left: -625px;
+    margin-top: 20px;
+  }
+
+  .starters h2{
+    margin-top: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-emphasis: bold;
+    align-self: center;
+  }
+
+  .starters h3{
+    color: white;
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    width: 260px;
+    text-align: center;
+  }
+
+.starter_section{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  
+}
+  .starters .items {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: left;
+    width: 260px;
+    text-align: left;
+  }
+
+  .starters .items_price {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: left;
+    width: 260px;
+    text-align: right;
+  }
+
+/* Drinks */
+
+.drinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7a2a2;
+  height: 340px;
+  width: 320px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.drinks h2{
+  margin-top: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-emphasis: bold;
+  align-self: center;
+}
+
+.drinks h3{
+  color: white;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+  width: 260px;
+  text-align: center;
+}
+
+.drink_section{
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+
+}
+.drinks .items {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: left;
+  width: 300px;
+  text-align: left;
+}
+
+.drinks .items_price {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: left;
+  width: 260px;
+  text-align: right;
+}
+
+/* Burgers */
+
+.burgers {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7a2a2;
+  height: 655px;
+  width: 380px;
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-self: right;
+}
+
+.burgers h2{
+  margin-top: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-emphasis: bold;
+  align-self: center;
+}
+
+.burgers h3{
+  color: white;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+  width: 260px;
+  text-align: center;
+}
+
+.burger_section{
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+
+}
+.burgers .items {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: left;
+  width: 1000px;
+  text-align: left;
+}
+
+.burg_desc{
+  color: black;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.burgers .items_price {
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: left;
+  width: 260px;
+  text-align: right;
+}
+
+.menu_download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 15px;
+  width: 350px;
+  height: 150px;
+  border: #f7a2a2;
+  border-style: dashed;
+  background-color: #ffcdcd;
+}
+
+
+.download_h1 {
+  font-size: 50px; 
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+}
+
+.download_h2 {
+  font-size: 20px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bottom Left */
+
+.bottom_left {
+  position: absolute;
+  height: 290px;
+  width: 660px;
+  background-image: url("/img/menu_animation.gif");
+  margin-left: 118px;
+  bottom: 76px;
+  
+}
+
+
+
+/* quote */
+  h4{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+  }

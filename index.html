@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="/img/burger_icon.png">
+    <title>Bitchen Burger</title>
+</head>
+<body>
+
+    <section class="header">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li>
+            <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="loadContent('menu.html')">Menu</a></li>
+            </li>
+            <li>
+                <a href="#" onclick="loadContent('recipe.html'); return false;">Recipes</a>
+            </li>
+            <li>
+                <a href="#" onclick="loadContent('roulette.html'); return false;">Roulette</a>
+            </li>
+            <li>
+                <a href="#" onclick="loadContent('merch.html'); return false;">Merch</a>
+            </li>
+        </ul>
+    </section>
+    <div id="content">
+        <div class="welcome_banner">
+            <img src="img/burger.jpg" class="slides" alt="Smokey Classic">
+            <img src="img/burger-02.jpg" class="slides" alt="Image 2">
+            <img src="/img/burger_promo-01-01.png" class="slides" alt="Image 2">
+        </div>
+
+        <div class="title">
+            <h1>BURGER ME SIDEWAYS</h1> 
+            <h2>Way back in 2023, one ambitious and proud englishman, who had watched too many episodes of Gordan Ramsay Kitchen Nightmares, changed the UK Burger scene forever. Now with very little experience and 1 store location, we pride ourselves on serving up a variety of handcrafted burgers, combining 100% prime beef with the freshest ingredients and burger sauces made from scratch, every day, in our Bitchen Burger kitchen.</h2>
+            <button class="find_out_more" onclick="showPopUp()"> Find out more</button>
+
+        <!-- The pop-up box -->
+        <div id="pop-up-box">
+            <h1>BITCHEN KITCHEN</h1>
+            <div class="popup_content">
+                <div class="left_box"></div>
+                <div class="right_box"></div>
+            </div>
+            <button class="close_button" onclick="hidePopUp()">Close</button>
+        </div>
+
+            
+        </div>
+
+                <!--Music Player -->
+        <div class="music_section">
+
+            <div id="audio-player">
+                <div id="album-art">
+                    <img src="/img/ab67616d0000b273158d5a1cab4aa7fdb1d58411.jpg" alt="">
+                </div>
+                <div id="audio-controls">
+                    <div class="box">This week's popping beat!</div>
+                    <button id="play-pause-button">Play</button>
+                    <audio id="audio" src="/audio/Dario G - Sunchyme (Official Music Video).mp3"></audio>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--Footer Content-->
+    <footer>
+        <p class="copyright">bitchenburger.co.uk © 2023</p>       
+    </footer>
+     
+     <button class="open-button" onclick="openForm()">News Letter</button>
+ 
+         <div class="form-popup" id="myForm">
+           <form action="none" method="post" class="form-container">
+             <h1>Sign Up</h1>
+ 
+             <label for="email"><b>Name</b></label>
+             <input type="text" placeholder="First Name" name="fname" required>
+             <input type="text" placeholder="Last Name" name="lname" required>
+ 
+             <label for="email"><b>Email</b></label>
+             <input type="email" placeholder="Email" name="email" required>
+ 
+             <button type="submit" class="btn">Sign Up</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+           </form>
+         </div>
+
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <form action="process-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Send</button>
+          </form>
+    </div>
+
+    <script src="/scripts/home_script.js"></script>
+</body>
+
+</html>
